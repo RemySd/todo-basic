@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My Todo
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<h1>Add a new todo</h1>
+				{{ form_start(todoForm) }}
+
+				<div class="form-group mt-3">
+					{{ form_row(todoForm.title, {'attr': {'class': 'form-control'}}) }}
+				</div>
+
+				<div class="form-group mt-3">
+					{{ form_row(todoForm.content, {'attr': {'class': 'form-control'}}) }}
+				</div>
+
+				<input type="submit" value="Ajouter Todo" class="btn btn-primary mt-2">
+
+				{{ form_end(todoForm) }}
+
+
+			</div>
+		</div>
+		<div class="row mt-5">
+			{% for todoItem in todoItems %}
+				<div class="col-3 todo-item" style="margin-top: 10px;" data-todo-id="{{ todoItem.id }}">
+					<div class="card text-bg-light">
+						<div class="card-body">
+							<h5 class="card-title">{{ todoItem.title }}</h5>
+							<p class="card-text">{{ todoItem.content }}</p>
+							<div style="float: right">
+								<i class="bi bi-check-square check-todo" style="font-size: 24px;"></i>
+								<i class="bi bi-trash3-fill remove-todo" style="font-size: 24px; margin-left: 10px;"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

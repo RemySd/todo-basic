@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+footer {
+    color: black;
+    background-color: #f8f9fa;
+
+    p {
+        text-align: center;
+    }
+
+    margin-top: 60px;
+}
+
+#page-container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* what we're adding */
+    display: flex;
+    flex-direction: column;
+}
+
+#content-wrap {
+    flex-grow: 1;
+}

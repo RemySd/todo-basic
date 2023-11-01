@@ -20,6 +20,20 @@ class TodoController extends AbstractController
         $todoItem = new TodoItem();
         $todoItemForm = $this->createForm(TodoItemFormType::class, $todoItem);
 
+        $todoItems = $todoItemRepository->findBy(['user' => $this->getUser()]);
+
+        return $this->render('todo/index.html.twig', [
+            'todoItems' => $todoItems,
+            'todoForm' => $todoItemForm
+        ]);
+    }
+
+    #[Route('/app/add', name: 'app_todo_add', methods: ["POST"])]
+    public function addTodo(EntityManagerInterface $entityManager, Request $request): JsonResponse
+    {
+        $todoItem = new TodoItem();
+        $todoItemForm = $this->createForm(TodoItemFormType::class, $todoItem);
+
         $todoItemForm->handleRequest($request);
         if ($todoItemForm->isSubmitted() && $todoItemForm->isValid()) {
             $todoItem->setUser($this->getUser());
@@ -27,15 +41,13 @@ class TodoController extends AbstractController
             $entityManager->persist($todoItem);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_todo');
+            return $this->json([
+                'object' => $todoItem, 
+                'html' => $this->render('todo/todo.html.twig', ['todoItem' => $todoItem])->getContent()
+            ]);
         }
 
-        $todoItems = $todoItemRepository->findBy(['user' => $this->getUser()]);
-
-        return $this->render('todo/index.html.twig', [
-            'todoItems' => $todoItems,
-            'todoForm' => $todoItemForm
-        ]);
+        return $this->json([]);
     }
 
     #[Route('/app/{todoItem}/remove', name: 'app_todo_remove', methods: ["POST"])]

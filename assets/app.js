@@ -3,10 +3,35 @@ import './styles/app.scss';
 require('bootstrap');
 
 document.addEventListener("DOMContentLoaded", function () {
-    const masonryContainer = document.querySelector('.todo-items');
+    const masonryContainer = document.querySelector('#todo-items');
     const masonry = new Masonry(masonryContainer, {
         percentPosition: true,
         itemSelector: '.col'
+    });
+
+    const addTodoForm = document.querySelector('#add-todo-form');
+
+    addTodoForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log('test');
+        const formData = new FormData(this);
+
+        fetch(`/app/add`, {
+            method: "POST",
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+
+                document.querySelector('#todo-items').insertAdjacentHTML('afterbegin', data.html);
+                
+                masonry.reloadItems();
+                masonry.layout();
+            })
+            .catch(error => {
+                console.error(error);
+            });
     });
 
     const removeButtons = document.querySelectorAll('.remove-todo');

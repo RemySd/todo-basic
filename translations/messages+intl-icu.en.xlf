@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="rujVJ3G" resname="app.title">
+        <source>app.title</source>
+        <target>Todo basic</target>
+      </trans-unit>
+      <trans-unit id="EN_Cysp" resname="app.security.title">
+        <source>app.security.title</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="I0mnhKr" resname="app.security.password">
+        <source>app.security.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="FH58dbB" resname="app.security.button">
+        <source>app.security.button</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="2xctQqr" resname="app.security.forgot_password">
+        <source>app.security.forgot_password</source>
+        <target>Forgot password</target>
+      </trans-unit>
+      <trans-unit id="DDLiqjJ" resname="app.todo.add_todo">
+        <source>app.todo.add_todo</source>
+        <target>Add todo</target>
+      </trans-unit>
+      <trans-unit id="ub5.2w7" resname="app.nav.title">
+        <source>app.nav.title</source>
+        <target>TODO BASIC</target>
+      </trans-unit>
+      <trans-unit id="BK9Cwwi" resname="app.nav.todo">
+        <source>app.nav.todo</source>
+        <target>Todo's</target>
+      </trans-unit>
+      <trans-unit id="P.bsCSO" resname="app.nav.profile">
+        <source>app.nav.profile</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="rd567l9" resname="app.nav.logout">
+        <source>app.nav.logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="Z.Ssa_u" resname="app.footer.informations">
+        <source>app.footer.informations</source>
+        <target>Tool by Rémy Sainsard © {date} all rights reserved</target>
+      </trans-unit>
+      <trans-unit id="ocdmxb_" resname="app.todo.add_button">
+        <source>app.todo.add_button</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="sD2BXCB" resname="app.todo.form.title.label">
+        <source>app.todo.form.title.label</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="SoPXHPl" resname="app.todo.form.content.label">
+        <source>app.todo.form.content.label</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="Wto_vLO" resname="app.profile.email">
+        <source>app.profile.email</source>
+        <target>Email : {email}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

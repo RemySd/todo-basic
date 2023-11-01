@@ -24,3 +24,29 @@ removeButtons.forEach((button) => {
             });
     });
 });
+
+const checkButtons = document.querySelectorAll('.check-todo');
+
+checkButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const todoId = button.closest('.todo-item').getAttribute('data-todo-id');
+
+        fetch(
+            `/app/${todoId}/check`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }).then((response) => {
+                return response.json();
+            }).then(function (data) {
+                button.closest('.card').classList.remove('text-bg-light');
+                button.closest('.card').classList.add('text-bg-success');
+                button.remove();
+            }).catch(function (error) {
+                console.log('something fail');
+            });
+    });
+});
+

@@ -46,4 +46,13 @@ class TodoController extends AbstractController
 
         return $this->json([]);
     }
+
+    #[Route('/app/{todoItem}/check', name: 'app_todo_check', methods: ["POST"])]
+    public function checkTodo(TodoItem $todoItem, EntityManagerInterface $entityManager): JsonResponse
+    {
+        $todoItem->setIsValided(true);
+        $entityManager->flush();
+
+        return $this->json([]);
+    }
 }

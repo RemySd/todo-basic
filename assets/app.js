@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addTodoForm.addEventListener("submit", function (event) {
         event.preventDefault();
-        console.log('test');
         const formData = new FormData(this);
 
         fetch(`/app/add`, {
@@ -22,10 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data);
-
                 document.querySelector('#todo-items').insertAdjacentHTML('afterbegin', data.html);
                 
+                document.querySelector('#add-todo-form').reset();
                 masonry.reloadItems();
                 masonry.layout();
             })

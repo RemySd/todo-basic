@@ -109,6 +109,22 @@
         <source>app.profile.title</source>
         <target>Profile informations</target>
       </trans-unit>
+      <trans-unit id="Hr9ozhh" resname="app.homepage.welcome_message_1">
+        <source>app.homepage.welcome_message_1</source>
+        <target>Welcome to basic todo</target>
+      </trans-unit>
+      <trans-unit id="226Rrxf" resname="app.homepage.welcome_message_2">
+        <source>app.homepage.welcome_message_2</source>
+        <target>This small app is created by Rémy Sainsard</target>
+      </trans-unit>
+      <trans-unit id="EtEz41b" resname="app.homepage.login">
+        <source>app.homepage.login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="JjNfoE7" resname="app.homepage.registration">
+        <source>app.homepage.registration</source>
+        <target>Registration</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -14,6 +14,12 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class TodoController extends AbstractController
 {
+    #[Route('/', name: 'app_home')]
+    public function homepage(): Response
+    {
+        return $this->render('todo/home.html.twig');
+    }
+
     #[Route('/app', name: 'app_todo')]
     public function index(TodoItemRepository $todoItemRepository, Request $request, EntityManagerInterface $entityManager): Response
     {

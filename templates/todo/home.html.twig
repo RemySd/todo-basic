@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<p>{{ 'app.homepage.welcome_message_1'|trans }}</p>
+				<p>{{ 'app.homepage.welcome_message_2'|trans }}</p>
+				<a href="{{ path('app_login') }}">{{ 'app.homepage.login'|trans }}</a>
+				<a href="{{ path('app_register') }}">{{ 'app.homepage.registration'|trans }}</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,7 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ 'app.email_verify.success_title'|trans }}{% endblock %}
+{% block title %}
+	{{ 'app.email_verify.success_title'|trans }}
+{% endblock %}
 
 {% block body %}
-    <p>{{ 'app.email_verify.success_message'|trans }}</p>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<p>{{ 'app.email_verify.success_message'|trans }}</p>
+			</div>
+		</div>
+	</div>
 {% endblock %}

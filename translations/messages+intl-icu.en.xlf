@@ -19,7 +19,7 @@
       </trans-unit>
       <trans-unit id="FH58dbB" resname="app.security.button">
         <source>app.security.button</source>
-        <target>Register</target>
+        <target>Login</target>
       </trans-unit>
       <trans-unit id="2xctQqr" resname="app.security.forgot_password">
         <source>app.security.forgot_password</source>

@@ -2,7 +2,6 @@ import './styles/app.scss';
 
 require('bootstrap');
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const masonryContainer = document.querySelector('#todo-items');
     const masonry = new Masonry(masonryContainer, {
@@ -13,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function addRemoveTodoEvent(element) {
         element.addEventListener('click', () => {
             const todoId = element.closest('.todo-item').getAttribute('data-todo-id');
-    
+
             fetch(
                 `/app/${todoId}/remove`,
                 {
@@ -27,7 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     element.closest('.todo-item').remove();
                     masonry.reloadItems();
                     masonry.layout();
-                })
+                }).catch(function (error) {
+                    console.log('something fail');
+                });
         });
     }
 

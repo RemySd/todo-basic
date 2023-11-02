@@ -26,6 +26,18 @@ footer {
 }
 
 .todo-icon {
-    font-size: 24px; 
+    font-size: 24px;
     cursor: pointer;
+}
+
+.todo-item {
+    margin-top: 10px;
+}
+
+.card-buttons {
+    float: right;
+}
+
+.remove-todo {
+    margin-left: 10px;
 }

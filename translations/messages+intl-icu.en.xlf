@@ -65,6 +65,50 @@
         <source>app.profile.email</source>
         <target>Email : {email}</target>
       </trans-unit>
+      <trans-unit id=".4ghGSx" resname="app.registration.title">
+        <source>app.registration.title</source>
+        <target>Registration!</target>
+      </trans-unit>
+      <trans-unit id="A3D6aoF" resname="app.registration.password">
+        <source>app.registration.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="p4pVAF9" resname="app.registration.button">
+        <source>app.registration.button</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="CLadvdu" resname="app.email_verify.success_title">
+        <source>app.email_verify.success_title</source>
+        <target>Email verify</target>
+      </trans-unit>
+      <trans-unit id="C9gpZiS" resname="app.email_verify.success_message">
+        <source>app.email_verify.success_message</source>
+        <target>Email successfully verify !</target>
+      </trans-unit>
+      <trans-unit id="3yYzx69" resname="app.email_confirmation.title">
+        <source>app.email_confirmation.title</source>
+        <target>Hi! Please confirm your email!</target>
+      </trans-unit>
+      <trans-unit id="tYHJthi" resname="app.email_confirmation.message_1">
+        <source>app.email_confirmation.message_1</source>
+        <target>Please confirm your email address by clicking the following link:</target>
+      </trans-unit>
+      <trans-unit id="YmwmHHU" resname="app.email_confirmation.link">
+        <source>app.email_confirmation.link</source>
+        <target>Confirm my Email</target>
+      </trans-unit>
+      <trans-unit id=".xxEUtp" resname="app.email_confirmation.message_2">
+        <source>app.email_confirmation.message_2</source>
+        <target>This link will expire in</target>
+      </trans-unit>
+      <trans-unit id="8odt.fZ" resname="app.email_confirmation.courtesy">
+        <source>app.email_confirmation.courtesy</source>
+        <target>Cheers!</target>
+      </trans-unit>
+      <trans-unit id="7QGx4.f" resname="app.profile.title">
+        <source>app.profile.title</source>
+        <target>Profile informations</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

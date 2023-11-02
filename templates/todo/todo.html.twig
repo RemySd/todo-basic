@@ -1,13 +1,13 @@
-<div id="todo-{{ todoItem.id }}" class="col col-6 col-lg-3 col-sm-6 todo-item" style="margin-top: 10px;" data-todo-id="{{ todoItem.id }}">
+<div id="todo-{{ todoItem.id }}" class="col col-6 col-lg-3 col-sm-6 todo-item" data-todo-id="{{ todoItem.id }}">
 	<div class="card {% if todoItem.isValided %}text-bg-success{% else %}text-bg-light{% endif %}">
 		<div class="card-body">
 			<h5 class="card-title">{{ todoItem.title }}</h5>
 			<p class="card-text">{{ todoItem.content }}</p>
-			<div style="float: right">
+			<div class="card-buttons">
 				{% if todoItem.isValided == false %}
 					<i class="bi bi-check-square check-todo todo-icon"></i>
 				{% endif %}
-				<i class="bi bi-trash3-fill remove-todo todo-icon" style="margin-left: 10px;"></i>
+				<i class="bi bi-trash3-fill remove-todo todo-icon"></i>
 			</div>
 		</div>
 	</div>

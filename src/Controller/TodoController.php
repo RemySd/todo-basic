@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class TodoController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function homepage(): Response
+    public function homepage(Request $request): Response
     {
         return $this->render('todo/home.html.twig');
     }

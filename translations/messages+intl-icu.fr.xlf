@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id=".4ghGSx" resname="app.registration.title">
+        <source>app.registration.title</source>
+        <target>__app.registration.title</target>
+      </trans-unit>
+      <trans-unit id="A3D6aoF" resname="app.registration.password">
+        <source>app.registration.password</source>
+        <target>__app.registration.password</target>
+      </trans-unit>
+      <trans-unit id="p4pVAF9" resname="app.registration.button">
+        <source>app.registration.button</source>
+        <target>__app.registration.button</target>
+      </trans-unit>
+      <trans-unit id="CLadvdu" resname="app.email_verify.success_title">
+        <source>app.email_verify.success_title</source>
+        <target>__app.email_verify.success_title</target>
+      </trans-unit>
+      <trans-unit id="C9gpZiS" resname="app.email_verify.success_message">
+        <source>app.email_verify.success_message</source>
+        <target>__app.email_verify.success_message</target>
+      </trans-unit>
+      <trans-unit id="3yYzx69" resname="app.email_confirmation.title">
+        <source>app.email_confirmation.title</source>
+        <target>__app.email_confirmation.title</target>
+      </trans-unit>
+      <trans-unit id="tYHJthi" resname="app.email_confirmation.message_1">
+        <source>app.email_confirmation.message_1</source>
+        <target>__app.email_confirmation.message_1</target>
+      </trans-unit>
+      <trans-unit id="YmwmHHU" resname="app.email_confirmation.link">
+        <source>app.email_confirmation.link</source>
+        <target>__app.email_confirmation.link</target>
+      </trans-unit>
+      <trans-unit id=".xxEUtp" resname="app.email_confirmation.message_2">
+        <source>app.email_confirmation.message_2</source>
+        <target>__app.email_confirmation.message_2</target>
+      </trans-unit>
+      <trans-unit id="8odt.fZ" resname="app.email_confirmation.courtesy">
+        <source>app.email_confirmation.courtesy</source>
+        <target>__app.email_confirmation.courtesy</target>
+      </trans-unit>
+      <trans-unit id="rujVJ3G" resname="app.title">
+        <source>app.title</source>
+        <target>__app.title</target>
+      </trans-unit>
+      <trans-unit id="EN_Cysp" resname="app.security.title">
+        <source>app.security.title</source>
+        <target>__app.security.title</target>
+      </trans-unit>
+      <trans-unit id="I0mnhKr" resname="app.security.password">
+        <source>app.security.password</source>
+        <target>__app.security.password</target>
+      </trans-unit>
+      <trans-unit id="FH58dbB" resname="app.security.button">
+        <source>app.security.button</source>
+        <target>__app.security.button</target>
+      </trans-unit>
+      <trans-unit id="2xctQqr" resname="app.security.forgot_password">
+        <source>app.security.forgot_password</source>
+        <target>__app.security.forgot_password</target>
+      </trans-unit>
+      <trans-unit id="DDLiqjJ" resname="app.todo.add_todo">
+        <source>app.todo.add_todo</source>
+        <target>Ajouter une todo</target>
+      </trans-unit>
+      <trans-unit id="sD2BXCB" resname="app.todo.form.title.label">
+        <source>app.todo.form.title.label</source>
+        <target>__app.todo.form.title.label</target>
+      </trans-unit>
+      <trans-unit id="SoPXHPl" resname="app.todo.form.content.label">
+        <source>app.todo.form.content.label</source>
+        <target>__app.todo.form.content.label</target>
+      </trans-unit>
+      <trans-unit id="ocdmxb_" resname="app.todo.add_button">
+        <source>app.todo.add_button</source>
+        <target>__app.todo.add_button</target>
+      </trans-unit>
+      <trans-unit id="Hr9ozhh" resname="app.homepage.welcome_message_1">
+        <source>app.homepage.welcome_message_1</source>
+        <target>__app.homepage.welcome_message_1</target>
+      </trans-unit>
+      <trans-unit id="226Rrxf" resname="app.homepage.welcome_message_2">
+        <source>app.homepage.welcome_message_2</source>
+        <target>__app.homepage.welcome_message_2</target>
+      </trans-unit>
+      <trans-unit id="EtEz41b" resname="app.homepage.login">
+        <source>app.homepage.login</source>
+        <target>__app.homepage.login</target>
+      </trans-unit>
+      <trans-unit id="JjNfoE7" resname="app.homepage.registration">
+        <source>app.homepage.registration</source>
+        <target>__app.homepage.registration</target>
+      </trans-unit>
+      <trans-unit id="7QGx4.f" resname="app.profile.title">
+        <source>app.profile.title</source>
+        <target>__app.profile.title</target>
+      </trans-unit>
+      <trans-unit id="Wto_vLO" resname="app.profile.email">
+        <source>app.profile.email</source>
+        <target>__app.profile.email</target>
+      </trans-unit>
+      <trans-unit id="Z.Ssa_u" resname="app.footer.informations">
+        <source>app.footer.informations</source>
+        <target>__app.footer.informations</target>
+      </trans-unit>
+      <trans-unit id="ub5.2w7" resname="app.nav.title">
+        <source>app.nav.title</source>
+        <target>__app.nav.title</target>
+      </trans-unit>
+      <trans-unit id="BK9Cwwi" resname="app.nav.todo">
+        <source>app.nav.todo</source>
+        <target>__app.nav.todo</target>
+      </trans-unit>
+      <trans-unit id="P.bsCSO" resname="app.nav.profile">
+        <source>app.nav.profile</source>
+        <target>__app.nav.profile</target>
+      </trans-unit>
+      <trans-unit id="rd567l9" resname="app.nav.logout">
+        <source>app.nav.logout</source>
+        <target>__app.nav.logout</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

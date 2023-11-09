@@ -13,6 +13,42 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">{{ 'app.profile.locale'|trans }}</h5>
+						<button id="switch-fr" class="btn btn-dark">{{ 'app.profile.locale_fr'|trans }}</button>
+						<button id="switch-en" class="btn btn-dark">{{ 'app.profile.locale_en'|trans }}</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+{% endblock %}
+
+{% block custom_javascripts %}
+	<script>
+		document.getElementById('switch-fr').addEventListener('click', () => {
+			fetch('switch-fr')
+            	.then((response) => {
+            	    return response.json();
+            	})
+            	.then((data) => {
+            	    location.reload();
+            	});
+		});
+		
+
+		document.getElementById('switch-en').addEventListener('click', () => {
+			fetch('switch-en')
+            	.then((response) => {
+            	    return response.json();
+            	})
+            	.then((data) => {
+            	    location.reload();
+            	});
+		});
+	</script>
 {% endblock %}
